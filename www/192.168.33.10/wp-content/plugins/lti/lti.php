@@ -319,7 +319,7 @@ class LTI {
       return $post_id;
     }
 
-    if ( defined( 'DOING AUTOSAVE' ) && DOING_AUTOSAVE ) {
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
       return $post_id;
     }
 
