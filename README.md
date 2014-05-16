@@ -12,7 +12,7 @@ if you run into any issues with `vagrant up` or setting up virtualbox or vagrant
 
 ## Setup
 1. Checkout repository
-    git clone https://github.com/FunnyMonkey/candela.git
+    git clone https://github.com/lumenlearning/candela.git
 1. `cd candela`
 1. `vagrant up`
 1. Navigate to http://192.168.33.10
