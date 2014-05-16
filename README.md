@@ -52,15 +52,17 @@ define( 'PB_XMLLINT_COMMAND', '/usr/bin/xmllint' );
 1. "Network Activate" PressBooks Textbook
 1. Navigate to "My Catalog" -> "Network Admin" -> "Themes"
 1. Select "Installed Themes"
-1. "Network Enable" the "Open Textbooks" theme - NOTE - this theme has all the PBTB functionality. The other PB specific themes will also work, but will not deliver the PBTB featureset
-1. Return to "My Catalog" -> "Network Admin" -> "Plugins"
-1. "Network Activate" Hypothesis
-1. Navigate to "My Catalog" -> "Network Admin" -> "Dashboard"
+1. "Network Enable" the "Open Textbooks" theme - NOTE - this theme has all the PBTB functionality. The other PB specific themes will also work, but will not deliver the PBTB featureset1. Navigate to "My Catalog" -> "Network Admin" -> "Dashboard"
 1. Select "Settings" -> "Network Settings"
 1. In the "Allow new registrations" section, select: "Logged in users may register new sites." This allows members with adequate privileges to create their own books
   * the other options on this page should be set/adjusted to suit administrative needs/preference
 1. Navigate to "My Catalog" -> "Add a New Book"
 1. Get writing!
+
+## Hypothes.is
+
+The hypothes.is functionality is included as part of Pressbooks Textbooks and needs to be enabled on a book by book basis. You can do this after creating a book by navigating to "PB Textbook" in the book site, clicking the "Other" tab and then choosing "Yes. I would like to add annotation functionality to my book pages." and then the "Save Changes" button.
+
 
 ##Enable and configure LTI and candela LTI
 1. Navigate to "My Sites" -> "Network Admin" -> "Plugins"
