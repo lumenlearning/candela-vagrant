@@ -66,5 +66,6 @@ define( 'PB_XMLLINT_COMMAND', '/usr/bin/xmllint' );
 1. Navigate to "My Sites" -> "Network Admin" -> "Plugins"
 1. "Network Activate" LTI
 1. "Network Activate" Candela LTI
-1. Create new post "lti consumer" this creates key/secret pairs to be used for LTI launches.
+1. Navigate to the textbook you wish to setup for LTI-based access.
+1. In the left admin menu, navigate to "LTI Consumers" -> "Add New."
 
