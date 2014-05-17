@@ -9,7 +9,7 @@ class php_devel {
 	# install xhprof. This requires beta install of xhprof.
 	exec { 'install xhprof':
 		command => '/usr/bin/pecl config-set preferred_state beta && /usr/bin/pecl install xhprof && /usr/bin/pecl config-set preferred_state stable',
-		require => Package['php5-common'],
+		require => Package['php-pear'],
 		creates => '/usr/lib/php5/20121212/xhprof.so'
 	}
 

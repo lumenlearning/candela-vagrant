@@ -29,7 +29,7 @@ class fm_apache_php {
 	}
 	package { php-pear:
 		ensure => installed,
-		require => Package["php5"]
+		require => Package["php5-dev"]
 	}
 	package { php5-curl:
 		ensure => installed,
