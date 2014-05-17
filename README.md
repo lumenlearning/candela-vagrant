@@ -62,10 +62,16 @@ define( 'PB_XMLLINT_COMMAND', '/usr/bin/xmllint' );
 
 ## Hypothes.is
 
-The hypothes.is functionality is included as part of Pressbooks Textbooks and needs to be enabled on a book by book basis. You can do this after creating a book by navigating to "PB Textbook" in the book site, clicking the "Other" tab and then choosing "Yes. I would like to add annotation functionality to my book pages." and then the "Save Changes" button.
+The hypothes.is functionality is included as part of Pressbooks Textbooks and needs to be enabled on a book by book basis. To enable annotation in your books:
+
+1. Navigate to "PB Textbook" admin section in the book where you want to enable Hypothes.is;
+1. Click the "Other" tab; 
+1. Select "Yes. I would like to add annotation functionality to my book pages." 
+1. Click the "Save Changes" button.
 
 
 ##Enable and configure LTI and candela LTI
+
 1. Navigate to "My Sites" -> "Network Admin" -> "Plugins"
 1. "Network Activate" LTI
 1. "Network Activate" Candela LTI
