@@ -36,14 +36,7 @@ if you run into any issues with `vagrant up` or setting up virtualbox or vagrant
 1. Choose 'sub-directories'
 1. Click "Install"
 1. Follow on screen instructions making appropriate edits to `www/192.168.33.10/wp-config.php` and `www/192.168.33.10/.htaccess`
-1. Add the following lines to wp-config.php just after the lines you added in the previous step.
 
-````
-define( 'PB_PRINCE_COMMAND', '/usr/bin/prince' );
-define( 'PB_KINDLEGEN_COMMAND', '/home/vagrant/kindlegen/kindlegen' );
-define( 'PB_EPUBCHECK_COMMAND', '/usr/bin/java -jar /home/vagrant/epubcheck-3.0.1/epubcheck-3.0.1.jar' );
-define( 'PB_XMLLINT_COMMAND', '/usr/bin/xmllint' );
-````
 ##Enable and Configure Pressbooks and Pressbooks Textbooks
 
 1. Once above edits are made relogin: http://192.168.33.10/wp-login.php
@@ -65,8 +58,8 @@ define( 'PB_XMLLINT_COMMAND', '/usr/bin/xmllint' );
 The hypothes.is functionality is included as part of Pressbooks Textbooks and needs to be enabled on a book by book basis. To enable annotation in your books:
 
 1. Navigate to "PB Textbook" admin section in the book where you want to enable Hypothes.is;
-1. Click the "Other" tab; 
-1. Select "Yes. I would like to add annotation functionality to my book pages." 
+1. Click the "Other" tab;
+1. Select "Yes. I would like to add annotation functionality to my book pages."
 1. Click the "Save Changes" button.
 
 
