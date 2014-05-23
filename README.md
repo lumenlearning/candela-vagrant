@@ -43,6 +43,7 @@ if you run into any issues with `vagrant up` or setting up virtualbox or vagrant
 1. Navigate to "My Sites" -> "Network Admin" -> "Plugins"
 1. "Network Activate" Pressbooks
 1. "Network Activate" PressBooks Textbook
+1. "Network Activate" Disable Comments
 1. Navigate to "My Catalog" -> "Network Admin" -> "Themes"
 1. Select "Installed Themes"
 1. "Network Enable" the "Open Textbooks" theme - NOTE - this theme has all the PBTB functionality. The other PB specific themes will also work, but will not deliver the PBTB featureset
