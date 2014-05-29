@@ -31,7 +31,7 @@ class app {
     ensure => installed,
   }
 
-  package php5-xsl:
+  package { php5-xsl:
     ensure => installed,
   }
 
