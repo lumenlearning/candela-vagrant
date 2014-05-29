@@ -31,6 +31,10 @@ class app {
     ensure => installed,
   }
 
+  package php5-xsl:
+    ensure => installed,
+  }
+
   # install epubcheck
   exec { 'install epubcheck':
     command => '/usr/bin/wget -O /home/vagrant/epubcheck.zip https://github.com/IDPF/epubcheck/releases/download/v3.0.1/epubcheck-3.0.1.zip && unzip /home/vagrant/epubcheck.zip -d /home/vagrant',
