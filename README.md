@@ -44,6 +44,8 @@ if you run into any issues with `vagrant up` or setting up virtualbox or vagrant
 1. "Network Activate" Pressbooks
 1. "Network Activate" PressBooks Textbook
 1. "Network Activate" Disable Comments
+1. "Network Activate" Candela Citations
+1. "Network Activate" Candela License
 1. Use the "Settings" link for Disable Comments to access the settings page. Select "Everywhere: Disable all comment-related controls and settings in WordPress." Click the "Save Changes" button.
 1. Navigate to "My Catalog" -> "Network Admin" -> "Themes"
 1. Select "Installed Themes"
