@@ -69,9 +69,9 @@ The hypothes.is functionality is included as part of Pressbooks Textbooks and ne
 
 ##Enable and configure LTI and candela LTI
 
-1. Navigate to "My Sites" -> "Network Admin" -> "Plugins"
-1. "Network Activate" LTI
-1. "Network Activate" Candela LTI
-1. Navigate to the textbook you wish to setup for LTI-based access.
-1. In the left admin menu, navigate to "LTI Consumers" -> "Add New."
+1. Navigate to "My Catalog" -> "PRIMARY SITE NAME" -> "Dashboard"
+1. Click "Plugins"
+1. "Activate" LTI
+1. "Activate" Candela LTI
+1. In the left admin menu (primary site only), navigate to "LTI Consumers" -> "Add New."
 
