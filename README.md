@@ -12,10 +12,12 @@ if you run into any issues with `vagrant up` or setting up virtualbox or vagrant
 
 ## Setup
 1. Checkout repository
-    git clone https://github.com/lumenlearning/candela-vagrant.git
+
+    `git clone https://github.com/lumenlearning/candela-vagrant.git`
 1. `cd candela`
 1. Checkout the candela codebase
-    git clone https://github.com/lumenlearning/candela.git www/192/168.33.10
+
+    `git clone https://github.com/lumenlearning/candela.git www/192/168.33.10`
 1. `vagrant up`
 1. Navigate to http://192.168.33.10
 1. Click "Create a Configuration File"
