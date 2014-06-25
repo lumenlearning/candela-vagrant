@@ -1,1 +1,0 @@
-<?php wp_redirect( PATH_CURRENT_SITE, 301 ); ?>

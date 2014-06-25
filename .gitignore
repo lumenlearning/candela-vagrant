@@ -1,6 +1,3 @@
 .vagrant
-www/192.168.33.10/.htaccess
-www/192.168.33.10/wp-config.php
-www/192.168.33.10/wp-content/debug.log
-www/192.168.33.10/wp-content/uploads
+www/192.168.33.10
 
