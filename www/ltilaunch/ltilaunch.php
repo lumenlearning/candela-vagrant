@@ -1,8 +1,8 @@
 <?php
-$consumer_key = '434679a042c409de25b85a2d78b27e256f0044d6';
-$consumer_secret = 'ebbdd50432075b5061e4866887b9b7adc3250126';
-$blog = 2;
-$ltiurl = 'http://192.168.33.10/api/lti/' . $blog;
+$consumer_secret = '3177725da45fcce86aa1a90e87da0f2e451ec44f';
+$consumer_key = 'fd4679f3a977fa5467e6ce9f4b6390c771a2b8a0';
+$blog = 10;
+$ltiurl = 'https://courses.candelalearning.com/api/lti/' . $blog;
 $time = time();
 $nonce = sha1($time);
 echo "Time: $time<br />\n";
@@ -41,7 +41,7 @@ echo "Nonce: $nonce<br />\n";
 </head>
 <body>
 <div id="ltiLaunchFormSubmitArea">
-    <form action="http://192.168.33.10/api/lti/2" name="ltiLaunchForm" id="ltiLaunchForm" method="post" encType="application/x-www-form-urlencoded">
+    <form action="<?php print $ltiurl; ?>" name="ltiLaunchForm" id="ltiLaunchForm" method="post" encType="application/x-www-form-urlencoded">
         <input type="hidden" name="oauth_version" value="1.0"/>
         <input type="hidden" name="oauth_nonce" value="<?php print $nonce ?>"/>
         <input type="hidden" name="oauth_timestamp" value="<?php print $time ?>"/>
