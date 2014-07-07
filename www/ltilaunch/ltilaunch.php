@@ -1,8 +1,9 @@
 <?php
-$consumer_secret = '3177725da45fcce86aa1a90e87da0f2e451ec44f';
-$consumer_key = 'fd4679f3a977fa5467e6ce9f4b6390c771a2b8a0';
-$blog = 10;
-$ltiurl = 'https://courses.candelalearning.com/api/lti/' . $blog;
+$consumer_secret = '9f58e6b5ef1b02fe273a36ff8d53c1a5302a1601';
+$consumer_key = '50435cba83c6dfb18185e239baa9c17b5263caca';
+$blog = 2;
+$ltiurl = 'http://192.168.33.10/api/lti/' . $blog;
+$resource_link_id = '353288f929-123456';
 $time = time();
 $nonce = sha1($time);
 echo "Time: $time<br />\n";
@@ -15,7 +16,7 @@ $oauth->setTimestamp($time);
 $oauth->setAuthType(OAUTH_AUTH_TYPE_NONE);
 $params = array(
   "oauth_consumer_key" => $consumer_key,
-  "resource_link_id" => "120988f929-274612",
+  "resource_link_id" => $resource_link_id,
   "user_id" => "292832126",
   "roles" => "Instructor",
   "lis_person_name_full" => "Jane Q. Public",
@@ -46,7 +47,7 @@ echo "Nonce: $nonce<br />\n";
         <input type="hidden" name="oauth_nonce" value="<?php print $nonce ?>"/>
         <input type="hidden" name="oauth_timestamp" value="<?php print $time ?>"/>
         <input type="hidden" name="oauth_consumer_key" value="<?php print $consumer_key ?>"/>
-        <input type="hidden" name="resource_link_id" value="120988f929-274612"/>
+        <input type="hidden" name="resource_link_id" value="<?php print $resource_link_id ?>"/>
         <input type="hidden" name="user_id" value="292832126"/>
         <input type="hidden" name="roles" value="Instructor"/>
         <input type="hidden" name="lis_person_name_full" value="Jane Q. Public"/>
