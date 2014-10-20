@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://192.168.33.10/" />
+<title>edit-book</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">edit-book</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@id='menu-posts-chapter']/a/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add Part</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=title</td>
+	<td>Part 1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=pb_part_content-html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pb_part_content</td>
+	<td>Part 1 content body</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>Post published. View post</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@id='menu-posts-chapter']/a/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add New Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=title</td>
+	<td>Page 1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=parent_id</td>
+	<td>label=Part 1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=content-html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=content</td>
+	<td>Page 1 content body.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add New Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=title-prompt-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=title</td>
+	<td>Youtube embed</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=content-html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=content</td>
+	<td>https://www.youtube.com/watch?v=dQw4w9WgXcQ<br /></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=parent_id</td>
+	<td>label=Part 1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>Post published. View post</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View post</td>
+	<td></td>
+</tr>
+<!--TODO: Verify the embed worked okay-->
+<tr>
+	<td>open</td>
+	<td>/newbook/wp-admin/post-new.php?post_type=chapter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=title-prompt-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=title</td>
+	<td>Vimeo Embed</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=parent_id</td>
+	<td>label=Part 1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=content-html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=content</td>
+	<td>http://vimeo.com/2619976</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=message</td>
+	<td>Post published. View post</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View post</td>
+	<td></td>
+</tr>
+<!--TODO: Verify the embed worked okay-->
+<tr>
+	<td>open</td>
+	<td>/newbook/wp-admin/post-new.php?post_type=chapter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=title</td>
+	<td>OEA embed</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=parent_id</td>
+	<td>label=Part 1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=content-html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=content</td>
+	<td>http://www.openassessments.org/assessments/39</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>Post published. View post</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View post</td>
+	<td></td>
+</tr>
+<!--TODO: Verify the embed worked okay-->
+
+</tbody></table>
+</body>
+</html>

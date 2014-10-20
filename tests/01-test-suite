@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="install-stage-1.html">install-stage-1</a></td></tr>
+<tr><td><a href="logout.html">!!! logout (add breakpoint on first step)</a></td></tr>
+<tr><td><a href="login-super-admin.html">login-super-admin</a></td></tr>
+<tr><td><a href="install-stage-2.html">install-stage-2</a></td></tr>
+<tr><td><a href="create-regular-user.html">create-regular-user</a></td></tr>
+<tr><td><a href="create-network_admin.html">create-network_admin</a></td></tr>
+<tr><td><a href="logout.html">logout</a></td></tr>
+<tr><td><a href="login-nadmin.html">login-nadmin</a></td></tr>
+<tr><td><a href="create-new-book.html">create-new-book</a></td></tr>
+<tr><td><a href="logout.html">logout</a></td></tr>
+<tr><td><a href="book-login-nadmin.html">book-login-nadmin</a></td></tr>
+<tr><td><a href="edit-book.html">edit-book</a></td></tr>
+<tr><td><a href="logout.html">logout</a></td></tr>
+<tr><td><a href="book-login-nadmin.html">book-login-nadmin</a></td></tr>
+<tr><td><a href="update-book.html">update-book</a></td></tr>
+</tbody></table>
+</body>
+</html>

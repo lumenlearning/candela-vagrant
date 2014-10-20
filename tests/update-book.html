@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://192.168.33.10/" />
+<title>update-book</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">update-book</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#wp-admin-bar-view-site &gt; a.ab-item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Page 1')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<!--TODO: Fix issue with user requiring re-auth here-->
+<tr>
+	<td>type</td>
+	<td>id=user_login</td>
+	<td>nadmin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_pass</td>
+	<td>12341234</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=wp-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=_candela_license</td>
+	<td>label=CC BY-NC-SA</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Candela Citations</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=citation-type[0]</td>
+	<td>label=Copyrighted video content</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-description[0]</td>
+	<td>Rick Astley</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-author[0]</td>
+	<td>Rick Astley</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-organization[0]</td>
+	<td>Music Corp.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-project[0]</td>
+	<td>Rick Roll</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=citation-license[0]</td>
+	<td>label=All Rights Reserved</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=citation-add-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure you want to add citations to *every* page in this book?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@id='menu-posts-chapter']/a/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Page 1')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#view-post-btn &gt; a.button.button-small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
