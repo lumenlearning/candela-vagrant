@@ -23,6 +23,10 @@
 <tr><td><a href="logout.html">logout</a></td></tr>
 <tr><td><a href="book-login-nadmin.html">book-login-nadmin</a></td></tr>
 <tr><td><a href="update-book.html">update-book</a></td></tr>
+<tr><td><a href="add-user-to-book.html">add-user-to-book</a></td></tr>
+<tr><td><a href="logout.html">logout</a></td></tr>
+<tr><td><a href="book-login-ruser.html">book-login-ruser</a></td></tr>
+<tr><td><a href="edit-book-book-admin.html">edit-book-book-admin</a></td></tr>
 </tbody></table>
 </body>
 </html>

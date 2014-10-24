@@ -12,44 +12,8 @@
 <tr><td rowspan="1" colspan="3">update-book</td></tr>
 </thead><tbody>
 <tr>
-	<td>clickAndWait</td>
-	<td>css=#wp-admin-bar-view-site &gt; a.ab-item</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>xpath=(//a[contains(text(),'Page 1')])[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Edit</td>
-	<td></td>
-</tr>
-<!--TODO: Fix issue with user requiring re-auth here-->
-<tr>
-	<td>type</td>
-	<td>id=user_login</td>
-	<td>nadmin</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=user_pass</td>
-	<td>12341234</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>id=wp-submit</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>name=_candela_license</td>
-	<td>label=CC BY-NC-SA</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>id=publish</td>
+	<td>open</td>
+	<td>/newbook/wp-admin</td>
 	<td></td>
 </tr>
 <tr>
@@ -113,9 +77,249 @@
 	<td></td>
 </tr>
 <tr>
+	<td>click</td>
+	<td>id=citation-header-18</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li</td>
+	<td>Rick Astley. Authored by: Rick Astley. Provided by: Music Corp.. Project: Rick Roll. License: All Rights Reserved</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Test Book</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Candela Citations</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=citation-type[0]</td>
+	<td>label=CC with specific attribution</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-description[0]</td>
+	<td>CC authored content</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-author[0]</td>
+	<td>Michael Smith</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-organization[0]</td>
+	<td>Creative Commons</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-project[0]</td>
+	<td>Content Everywhere</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-url[0]</td>
+	<td>http://creativecommons.org</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=citation-license[0]</td>
+	<td>label=CC BY-NC-SA: Attribution-NonCommercial-ShareAlike</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-license_terms[0]</td>
+	<td>Specific attribubution</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=citation-replace-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Candela Citations</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Candela Citations</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=citation-type[0]</td>
+	<td>label=CC licensed content</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-description[0]</td>
+	<td>test content</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-author[0]</td>
+	<td>Jeff Graham</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-organization[0]</td>
+	<td>FunnyMonkey</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-url[0]</td>
+	<td>http://funnymonkey.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-project[0]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=citation-license[0]</td>
+	<td>label=CC BY: Attribution</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-license_terms[0]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=citation-add-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Youtube embed</td>
+	<td></td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
 	<td>link=Edit</td>
 	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=citation-type[0]</td>
+	<td>label=Copyrighted video content</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-description[0]</td>
+	<td>Never Gonna Give You Up</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-author[0]</td>
+	<td>Rick Astley</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-organization[0]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-url[0]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-project[0]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=citation-license[0]</td>
+	<td>label=All Rights Reserved</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-license_terms[0]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#view-post-btn &gt; a.button.button-small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=citation-header-20</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='citation-list-20']/ul[2]/li</td>
+	<td>Never Gonna Give You Up. Authored by: Rick Astley. License: All Rights Reserved</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Table of Contents</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Page 1')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=citation-type[2]</td>
+	<td>label=Original content</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-description[2]</td>
+	<td>Content Body</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=citation-author[2]</td>
+	<td>Jeff Graham</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#view-post-btn &gt; a.button.button-small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=citation-header-18</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='citation-list-18']/ul/li[2]</td>
+	<td>Content Body. Authored by: Jeff Graham. License: Public Domain: No Known Copyright</td>
 </tr>
 
 </tbody></table>

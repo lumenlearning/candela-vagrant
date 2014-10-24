@@ -4,16 +4,128 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="https://192.168.33.10/" />
-<title>edit-book</title>
+<title>edit-book-book-admin</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">edit-book</td></tr>
+<tr><td rowspan="1" colspan="3">edit-book-book-admin</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/newbook</td>
+	<td>/newbook/wp-admin/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Page 1')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=content-html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=content</td>
+	<td>Page 1 content body.<br /><br />ruser edit</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#view-post-btn &gt; a.button.button-small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='post-18']/div/p[2]</td>
+	<td>ruser edit</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Table of Contents</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Youtube embed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=content-html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=content</td>
+	<td>https://www.youtube.com/watch?v=dQw4w9WgXcQ<br /><br />Well that sure is a video.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#view-post-btn &gt; a.button.button-small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='post-20']/div/p[2]</td>
+	<td>Well that sure is a video.</td>
+</tr>
+<!--TODO: Verify the embed worked okay-->
+<tr>
+	<td>click</td>
+	<td>link=Table of Contents</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=OEA embed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=content</td>
+	<td>http://www.openassessments.org/assessments/39<br /><br />ruser edit assessment.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#view-post-btn &gt; a.button.button-small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='post-24']/div/p[2]</td>
+	<td>ruser edit assessment.</td>
+</tr>
+<!--TODO: Verify the embed worked okay-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Test Book</td>
 	<td></td>
 </tr>
 <tr>
@@ -29,7 +141,7 @@
 <tr>
 	<td>type</td>
 	<td>id=title</td>
-	<td>Part 1</td>
+	<td>book admin part</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -39,7 +151,7 @@
 <tr>
 	<td>type</td>
 	<td>id=pb_part_content</td>
-	<td>Part 1 content body</td>
+	<td>book admin part content body</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -64,12 +176,12 @@
 <tr>
 	<td>type</td>
 	<td>id=title</td>
-	<td>Page 1</td>
+	<td>book admin Page 1</td>
 </tr>
 <tr>
 	<td>select</td>
 	<td>id=parent_id</td>
-	<td>label=Part 1</td>
+	<td>label=book admin part</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -79,7 +191,7 @@
 <tr>
 	<td>type</td>
 	<td>id=content</td>
-	<td>Page 1 content body.</td>
+	<td>book admin page content body.</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -99,7 +211,7 @@
 <tr>
 	<td>type</td>
 	<td>id=title</td>
-	<td>Youtube embed</td>
+	<td>book admin Youtube embed</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -109,12 +221,12 @@
 <tr>
 	<td>type</td>
 	<td>id=content</td>
-	<td>https://www.youtube.com/watch?v=dQw4w9WgXcQ<br /></td>
+	<td>https://www.youtube.com/watch?v=dQw4w9WgXcQ<br /><br />Book admin embed</td>
 </tr>
 <tr>
 	<td>select</td>
 	<td>id=parent_id</td>
-	<td>label=Part 1</td>
+	<td>label=book admin part</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -145,12 +257,12 @@
 <tr>
 	<td>type</td>
 	<td>id=title</td>
-	<td>Vimeo Embed</td>
+	<td>book admin Vimeo Embed</td>
 </tr>
 <tr>
 	<td>select</td>
 	<td>id=parent_id</td>
-	<td>label=Part 1</td>
+	<td>label=book admin part</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -186,12 +298,12 @@
 <tr>
 	<td>type</td>
 	<td>id=title</td>
-	<td>OEA embed</td>
+	<td>book admin OEA embed</td>
 </tr>
 <tr>
 	<td>select</td>
 	<td>id=parent_id</td>
-	<td>label=Part 1</td>
+	<td>label=book admin part</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -201,7 +313,7 @@
 <tr>
 	<td>type</td>
 	<td>id=content</td>
-	<td>http://www.openassessments.org/assessments/39</td>
+	<td>http://www.openassessments.org/assessments/39<br /><br />Book admin embed</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -219,6 +331,16 @@
 	<td></td>
 </tr>
 <!--TODO: Verify the embed worked okay-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Test Book</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Admin</td>
+	<td></td>
+</tr>
 
 </tbody></table>
 </body>

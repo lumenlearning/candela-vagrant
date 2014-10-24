@@ -4,33 +4,54 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="https://192.168.33.10/" />
-<title>login-super-admin</title>
+<title>add-user-to-book</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">login-super-admin</td></tr>
+<tr><td rowspan="1" colspan="3">add-user-to-book</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/wp-login.php</td>
+	<td>/newbook/chapter/page-1/</td>
 	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=user_login</td>
-	<td>ruser</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=user_pass</td>
-	<td>12341234</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>id=wp-submit</td>
+	<td>link=Test Book</td>
 	<td></td>
 </tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Add New')])[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=adduser-email</td>
+	<td>ruser@example.com</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=adduser-role</td>
+	<td>label=Administrator</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=adduser-noconfirmation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=addusersub</td>
+	<td></td>
+</tr>
+
 </tbody></table>
 </body>
 </html>
